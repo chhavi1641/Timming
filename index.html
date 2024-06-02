@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delhi Clock</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    /* body{
+        background-image: url(clockbg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      } */
+    .bg {
+      position: absolute;
+      z-index: -1;
+      margin: -320px 4px 16px -110px;
+      transform: scale(1.6);
+      border-radius: 50%;
+      animation-duration: 4s;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <img src="clockbg.png" class="bg animate__zoomIn "></img>
+  </div>
+  <div class="container">
+    <h1>Clock</h1>
+    <div class="clock" id="delhi">
+      <h2>Timezone - Delhi India</h2>
+      <p class="time" id="time-delhi"></p>
+      <p class="date" id="date-delhi"></p>
+      <p class="day" id="day-delhi"></p>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
